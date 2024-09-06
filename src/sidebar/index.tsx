@@ -8,15 +8,19 @@ export default function Sidebar() {
   return (
     <Box
       backgroundColor="background"
+      position="fixed"
       display="flex"
-      height="1117px"
+      top={0}
+      left={0}
+      width="25%"
+      height="full"
       flexDirection="column"
       justifyContent="space-between">
-      <Box display="flex" padding="40px" flexDirection="column" gap="20px">
+      <Box display="flex" padding="20px" flexDirection="column" gap="20px">
         <Logo />
         <Menu />
       </Box>
-      <Box display="flex" px="40px" pb="40px">
+      <Box display="flex" px="20px" mb="40px">
         <Items src={logout} title="Logout" />
       </Box>
     </Box>

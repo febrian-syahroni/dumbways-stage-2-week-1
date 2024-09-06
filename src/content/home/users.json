@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Indah",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Justo ultrices sit sollicitudin dapibus tempor ornare. Sed congue sapien vitae vehicula ornare mi eleifend ad."
+  },
+  {
+    "name": "Dewi",
+    "description": "Curabitur vel hendrerit libero. Suspendisse quis velit aliquet, lobortis est in, feugiat sem."
+  },
+  {
+    "name": "Dewi",
+    "description": "Curabitur vel hendrerit libero. Suspendisse quis velit aliquet, lobortis est in, feugiat sem.",
+    "image": "https://th.bing.com/th/id/OIP.dsiC7a1xQd-CPZpBuMeCDgAAAA?w=244&h=180&c=7&r=0&o=5&pid=1.7"
+  },
+  {
+    "name": "Dodi",
+    "description": "Curabitur vel hendrerit libero. Suspendisse quis velit aliquet, lobortis est in, feugiat sem.",
+    "image": "https://th.bing.com/th/id/OIP.1k4x4eZE_gJdQb9LgvzQeAHaFj?w=263&h=197&c=7&r=0&o=5&pid=1.7"
+  }
+]

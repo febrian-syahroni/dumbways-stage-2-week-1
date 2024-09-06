@@ -5,7 +5,7 @@ import Login from "./authentication/login";
 import Register from "./authentication/register";
 import Forgot from "./authentication/forgot";
 import Reset from "./authentication/reset";
-import Home from "./home";
+import Home from "./layout";
 
 function App() {
   const router = createBrowserRouter([

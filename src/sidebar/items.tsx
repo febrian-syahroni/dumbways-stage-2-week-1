@@ -16,12 +16,10 @@ export default function Items({ title, src, ...props }: Attributes) {
       color="white"
       _hover={{ backgroundColor: "secondary" }}
       gap="16px"
-      py="16px"
-      px="20px">
-      <Image src={src} />
-      <Text fontSize="18px" fontWeight={700}>
-        {title}
-      </Text>
+      py="10px"
+      px="10px">
+      <Image boxSize="25px" src={src} />
+      <Text fontSize="15px">{title}</Text>
     </Box>
   );
 }
