@@ -47,7 +47,7 @@ export default function Reset() {
           <Text fontWeight={500} color="white">
             Already have account?
           </Text>
-          <Link fontWeight={700} color="primary.active">
+          <Link href="/login" fontWeight={700} color="primary.active">
             Login
           </Link>
         </Box>

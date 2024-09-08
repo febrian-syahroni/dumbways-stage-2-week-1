@@ -4,6 +4,7 @@ import { useState } from "react";
 import heartFill from "@/assets/content/heart-fill.svg";
 import heartOutline from "@/assets/content/heart-outline.svg";
 import Avatar from "@/components/avatar";
+import { Link } from "react-router-dom";
 
 interface desc {
   author: string;
@@ -37,10 +38,10 @@ export default function Posted({
       <Avatar />
       <Box display="flex" flexDirection="column" fontSize="12px" gap="10px">
         <Box display="flex" flexDirection="column" gap="2px">
-          <Text>{author}</Text>
+          <Link to="/profile">{author}</Link>
           <Text fontWeight="100">{description}</Text>
         </Box>
-        {image && <Image width="50%" src={image} />}
+        <Link to="/image">{image && <Image width="50%" src={image} />}</Link>
         <Box display="flex" gap="20px">
           <Box display="flex" gap="5px" alignItems="center">
             <Image
@@ -51,7 +52,9 @@ export default function Posted({
             <Text color="gray">36</Text>
           </Box>
           <Box display="flex" gap="5px" alignItems="center">
-            <Image src={textMessage} />
+            <Link to="/status">
+              <Image src={textMessage} />
+            </Link>
             <Text color="gray">381</Text>
             <Text color="gray">Replies</Text>
           </Box>

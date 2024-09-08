@@ -4,14 +4,21 @@ import userSearch from "@/assets/sidebar/user-search.svg";
 import heart from "@/assets/sidebar/heart.svg";
 import userProfile from "@/assets/sidebar/profile-circle.svg";
 import Items from "./items";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   return (
     <Box display="flex" width="full" flexDirection="column" gap="8px">
-      <Items src={home} title="Home" />
-      <Items src={userSearch} title="Search" />
+      <Link to="/home">
+        <Items src={home} title="Home" />
+      </Link>
+      <Link to="/search">
+        <Items src={userSearch} title="Search" />
+      </Link>
       <Items src={heart} title="Follows" />
-      <Items src={userProfile} title="Profile" />
+      <Link to="/profile">
+        <Items src={userProfile} title="Profile" />
+      </Link>
       <Button
         fontSize="15px"
         _hover={{ backgroundColor: "primary.disable" }}

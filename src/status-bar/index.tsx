@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
-import Profile from "./profile";
 import Suggested from "./suggested";
 import Meta from "./meta";
+import Profile from "./profile";
 
 export default function StatusBar() {
   return (

@@ -10,6 +10,7 @@ interface desc {
 
 export default function UpdateStatus({ button }: desc) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Box
       display="flex"

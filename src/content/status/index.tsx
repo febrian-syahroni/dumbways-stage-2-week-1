@@ -3,12 +3,15 @@ import arrow from "@/assets/content/status/Line arrow-left.svg";
 import DetailStatus from "./detail-status";
 import UpdateStatus from "../../features/update-status";
 import Posted from "../../features/posted";
+import { Link } from "react-router-dom";
 
-export default function Status() {
+export default function ContentStatus() {
   return (
     <>
-      <Box display="flex" gap="10px" px="20px" py="5px">
-        <Image cursor="pointer" width="20px" src={arrow} />
+      <Box display="flex" alignItems="center" gap="10px" px="20px" py="5px">
+        <Link to="/home">
+          <Image cursor="pointer" width="20px" src={arrow} />
+        </Link>
         <Text fontSize="18px">Status</Text>
       </Box>
       <DetailStatus />

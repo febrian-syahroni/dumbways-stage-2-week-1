@@ -1,9 +1,9 @@
 import { Text } from "@chakra-ui/react";
 import UpdateStatus from "../../features/update-status";
 import Posted from "../../features/posted";
-import users from "./users.json";
+import users from "@/data/users.json";
 
-export default function Home() {
+export default function ContentHome() {
   return (
     <>
       <Text fontSize="18px" px="20px" py="5px">

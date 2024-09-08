@@ -4,9 +4,10 @@ import foto from "@/assets/status-bar/foto.jpg";
 
 interface desc {
   height: string;
+  onOpen?: any;
 }
 
-export default function ProfileItem({ height }: desc) {
+export default function ProfileItem({ height, onOpen }: desc) {
   return (
     <>
       <Box position="relative">
@@ -29,8 +30,13 @@ export default function ProfileItem({ height }: desc) {
           src={foto}
         />
       </Box>
-      <Box display="flex" alignItems="center" justifyContent="end">
+      <Box
+        position="relative"
+        display="flex"
+        alignItems="center"
+        justifyContent="end">
         <Button
+          onClick={onOpen}
           textAlign="center"
           fontSize="9px"
           backgroundColor="background"

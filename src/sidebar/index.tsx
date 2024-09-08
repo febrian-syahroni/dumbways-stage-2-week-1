@@ -3,6 +3,7 @@ import { Box } from "@chakra-ui/react";
 import Menu from "./menu";
 import Items from "./items";
 import logout from "@/assets/sidebar/logout.svg";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -20,9 +21,11 @@ export default function Sidebar() {
         <Logo />
         <Menu />
       </Box>
-      <Box display="flex" px="20px" mb="40px">
-        <Items src={logout} title="Logout" />
-      </Box>
+      <Link to="login">
+        <Box display="flex" px="20px" mb="40px">
+          <Items src={logout} title="Logout" />
+        </Box>
+      </Link>
     </Box>
   );
 }

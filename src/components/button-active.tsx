@@ -1,6 +1,10 @@
 import { Button } from "@chakra-ui/react";
 
-export default function ButtonActive() {
+interface desc {
+  text?: string;
+}
+
+export default function ButtonActive({ text }: desc) {
   return (
     <Button
       rounded="full"
@@ -10,7 +14,7 @@ export default function ButtonActive() {
       _hover={{ bg: "primary.disable" }}
       py="5px"
       color="white">
-      Post
+      {text}
     </Button>
   );
 }
